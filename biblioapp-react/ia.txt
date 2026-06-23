@@ -24,11 +24,14 @@ utilidad:fue util
 
 
 --etapa 4--
-promp:
+promp:vamos a aplicar un estado y filtro seguro. Necesito que crees botones o un selector para filtrar por el estado: "todos", "disponible", "prestado", reservado", desed #file:FiltroEstado.jsx. En #file:App.jsx usa "useState" para guardar el filtro seleccionado y un campo de búsqueda por tiltulo. Aplica ambos filtros sobre el array antes de pasarlo a #file:ListaLibros.jsx y ysa renderizado condicional para mostrar el mensaje "no hay libros que coincidan" cuando el resultado quede vacío,
 
-resultado:
+el campo de busqueda debe ser un componente controlado (su valor vive en el estado de la react)
+por ultimo valida y normaliza el texto de busqueda antes de usarlo para no confiar ciegamente en la entrada de usuario.
 
-utilidad:
+resultado: el resultado cumplió, el filtro de busqueda funcioan como corresponde.
+
+utilidad: muy util.
 
 
 --etapa 5--
