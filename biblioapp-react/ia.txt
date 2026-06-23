@@ -35,9 +35,9 @@ utilidad: muy util.
 
 
 --etapa 5--
-promp:
+promp:Destaquemos novedades. Resalta visualmente los elementos con esNovedad: true (ejemplo: una etiqueta "nuevo" o un borde distinto), además agrega un contador que muestre cuántos libros son novedad.
 
-resultado:
+resultado: la novedad de "nuevo" cumple, adicionalmente se genera un contador donde se ven cuantos libros son nuevos.
 
-utilidad:
+utilidad:muy util.
 

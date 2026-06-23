@@ -26,6 +26,13 @@
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.book-card.is-new {
+  border-color: #f59e0b;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.18);
+  transform: translateY(-2px);
 }
 
 .book-title-row {
@@ -50,6 +57,29 @@
 .summary {
   margin-top: 0.7rem;
   color: #374151;
+}
+
+.new-badge {
+  background: #f59e0b;
+  color: #fff;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.novelty-counter {
+  margin: 0;
+  padding: 0.45rem 0.7rem;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.toolbar-info {
+  display: flex;
+  align-items: center;
 }
 
 .toolbar {

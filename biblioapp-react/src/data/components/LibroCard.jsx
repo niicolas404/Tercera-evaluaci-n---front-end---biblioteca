@@ -7,14 +7,16 @@ function LibroCard({
   anio,
   estado,
   resumen,
+  esNovedad,
 }) {
   const estadoNormalizado = typeof estado === 'string' ? estado.trim().toLowerCase() : ''
   const autoresTexto = Array.isArray(autores) ? autores.join(', ') : ''
 
   return (
-    <article className="book-card">
+    <article className={`book-card ${esNovedad ? 'is-new' : ''}`}>
       <div className="book-title-row">
         <h2>{titulo}</h2>
+        {esNovedad && <span className="new-badge">Nuevo</span>}
       </div>
 
       <p className="authors">{autoresTexto}</p>
@@ -40,6 +42,7 @@ LibroCard.propTypes = {
   anio: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   estado: PropTypes.string,
   resumen: PropTypes.string,
+  esNovedad: PropTypes.bool,
 }
 
 LibroCard.defaultProps = {
@@ -49,6 +52,7 @@ LibroCard.defaultProps = {
   anio: 'Año no disponible',
   estado: 'Disponible',
   resumen: 'Sin descripción disponible.',
+  esNovedad: false,
 }
 
 export default LibroCard

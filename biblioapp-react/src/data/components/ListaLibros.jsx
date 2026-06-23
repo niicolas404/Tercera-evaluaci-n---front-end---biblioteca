@@ -13,6 +13,7 @@ function ListaLibros({ libros }) {
           anio={libro.anio}
           estado={libro.estado}
           resumen={libro.resumen}
+          esNovedad={libro.esNovedad}
         />
       ))}
     </section>
@@ -29,6 +30,7 @@ ListaLibros.propTypes = {
       anio: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
       estado: PropTypes.string,
       resumen: PropTypes.string,
+      esNovedad: PropTypes.bool,
     })
   ).isRequired,
 }

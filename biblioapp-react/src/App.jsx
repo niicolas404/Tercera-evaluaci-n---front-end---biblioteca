@@ -33,6 +33,8 @@ function App() {
     return coincideEstado && coincideBusqueda
   })
 
+  const novedadesMostradas = librosFiltrados.filter((libro) => libro.esNovedad).length
+
   return (
     <main className="app">
       <header className="app-header">
@@ -42,6 +44,10 @@ function App() {
 
       <section className="toolbar" aria-label="Herramientas de filtrado">
         <FiltroEstado valor={filtroEstado} onCambiar={setFiltroEstado} />
+
+        <div className="toolbar-info">
+          <p className="novelty-counter">Novedades: {novedadesMostradas}</p>
+        </div>
 
         <label className="search-field">
           <span>Buscar por título</span>
