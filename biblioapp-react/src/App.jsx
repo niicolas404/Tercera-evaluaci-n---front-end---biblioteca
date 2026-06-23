@@ -1,5 +1,5 @@
 import libros from './data/libros'
-import LibroCard from './data/components/LibroCard'
+import ListaLibros from './data/components/ListaLibros'
 import './App.css'
 
 function App() {
@@ -10,19 +10,7 @@ function App() {
         <p>Catálogo de libros de la colección.</p>
       </header>
 
-      <section className="book-list" aria-label="Listado de libros">
-        {libros.map((libro) => (
-          <LibroCard
-            key={libro.id}
-            titulo={libro.titulo}
-            autores={libro.autores}
-            editorial={libro.editorial}
-            anio={libro.anio}
-            estado={libro.estado}
-            resumen={libro.resumen}
-          />
-        ))}
-      </section>
+      <ListaLibros libros={libros} />
     </main>
   )
 }
