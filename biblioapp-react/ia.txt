@@ -1,0 +1,38 @@
+--etapa 1--
+promp:analiza #file:App.jsx e importa el array de #file:libros.js, necesito que se muestre solamente la información de los libros y elimines todo lo referente a la pagina por defecto de react.
+
+resultado: cumplió con las instrucciones de maerna eficiente
+
+utilidad: Muy util.
+
+--etapa 2--
+promp:
+
+resultado:
+
+utilidad:
+
+
+--etapa 3--
+promp:
+
+resultado:
+
+utilidad:
+
+
+--etapa 4--
+promp:
+
+resultado:
+
+utilidad:
+
+
+--etapa 5--
+promp:
+
+resultado:
+
+utilidad:
+

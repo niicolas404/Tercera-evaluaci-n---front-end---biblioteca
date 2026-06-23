@@ -1,0 +1,78 @@
+.app {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.book-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.book-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.book-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-title-row h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.badge {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.authors {
+  color: #4b5563;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.summary {
+  margin-top: 0.7rem;
+  color: #374151;
+}
+
+.status {
+  font-weight: 700;
+}
+
+.status.disponible {
+  color: #15803d;
+}
+
+.status.prestado {
+  color: #b45309;
+}
+
+.status.reservado {
+  color: #b91c1c;
+}
