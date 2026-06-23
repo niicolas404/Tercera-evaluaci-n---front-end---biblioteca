@@ -13,3 +13,5 @@ Props:
 -en ListaLibros se recorre el arreglo de libros con .map(). esto es adecuado porque el array de los libros presenta una coleccion de elementos del mismo tipo. React necesita renderizar uno por uno.
 -en #app.jsx se usa renderizado condicional para mostrar la lista de los libros si noy hay resultado. Es adecuado porque debe responder a diferentes situaciones como: "no hay resultados:mostrar catálogo", o "no hay resultados: mostrar aviso".
 
+La ventaja que tiene dividir el catalogo por componente que el cdigo sea escalable para futuras actualizaciones.
+
