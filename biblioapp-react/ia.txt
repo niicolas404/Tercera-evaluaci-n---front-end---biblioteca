@@ -6,11 +6,13 @@ resultado: cumplió con las instrucciones de maerna eficiente
 utilidad: Muy util.
 
 --etapa 2--
-promp:
+promp:utiliza #file:LibroCard.jsx para que el componente reciba de #file:libros.js por props el título del libro, editorial, anio, estado, rsumen, autores. Muestra la informaciónd e manera ordenada y aplica estilos diferenciado según el estado: verde para "disponible", amarillo para "prestado" y gris pára "reservado". Es sumamente importante que definas los tipos de las props con PropTypes y entrega valores por defecto para evitar errores cuando falte un dato.
 
-resultado:
+renderiza el textp siempre como contenido jsx normal. No uses dangerouslySetInnerHTML. Por ultimo, nod ejes credenciales, claves ni datos sensibles escritos en el codigo.
 
-utilidad:
+resultado: el objetivo fue logrado, cumple bien las indicaciones.
+
+utilidad: Util
 
 
 --etapa 3--

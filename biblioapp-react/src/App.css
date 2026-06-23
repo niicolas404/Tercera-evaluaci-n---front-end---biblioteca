@@ -41,15 +41,6 @@
   font-size: 1.1rem;
 }
 
-.badge {
-  background: #2563eb;
-  color: #fff;
-  padding: 0.2rem 0.5rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
 .authors {
   color: #4b5563;
   font-weight: 600;
@@ -59,6 +50,29 @@
 .summary {
   margin-top: 0.7rem;
   color: #374151;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.status-pill.disponible {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-pill.prestado {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.status-pill.reservado {
+  background-color: #e5e7eb;
+  color: #4b5563;
 }
 
 .status {
@@ -74,5 +88,5 @@
 }
 
 .status.reservado {
-  color: #b91c1c;
+  color: #4b5563;
 }

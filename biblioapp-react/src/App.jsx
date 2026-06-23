@@ -1,4 +1,5 @@
 import libros from './data/libros'
+import LibroCard from './data/components/LibroCard'
 import './App.css'
 
 function App() {
@@ -11,25 +12,15 @@ function App() {
 
       <section className="book-list" aria-label="Listado de libros">
         {libros.map((libro) => (
-          <article className="book-card" key={libro.id}>
-            <div className="book-title-row">
-              <h2>{libro.titulo}</h2>
-              {libro.esNovedad && <span className="badge">Novedad</span>}
-            </div>
-
-            <p className="authors">{libro.autores.join(', ')}</p>
-            <p>
-              <strong>Editorial:</strong> {libro.editorial}
-            </p>
-            <p>
-              <strong>Año:</strong> {libro.anio}
-            </p>
-            <p>
-              <strong>Estado:</strong>{' '}
-              <span className={`status ${libro.estado.toLowerCase()}`}>{libro.estado}</span>
-            </p>
-            <p className="summary">{libro.resumen}</p>
-          </article>
+          <LibroCard
+            key={libro.id}
+            titulo={libro.titulo}
+            autores={libro.autores}
+            editorial={libro.editorial}
+            anio={libro.anio}
+            estado={libro.estado}
+            resumen={libro.resumen}
+          />
         ))}
       </section>
     </main>
